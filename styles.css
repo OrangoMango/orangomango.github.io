@@ -17,6 +17,14 @@ body{
   color: red;
 }
 
+#projtitle{
+  text-align: center;
+  color: yellow;
+  font-size: 300%;
+  font-weight: bold;
+  letter-spacing: 15px;
+}
+
 .projectdesc{
   padding-left: 20px;
   padding-top: 8px;
