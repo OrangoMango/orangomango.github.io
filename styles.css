@@ -26,6 +26,7 @@ a{
   font-size: 170%;
   font-weight: bold;
   color: red;
+  font-family: "Langar";
 }
 
 #projtitle{
@@ -45,8 +46,9 @@ a{
 
 .projectdesc{
   padding-left: 20px;
-  padding-top: 8px;
-  font-size: 85%;
+  padding-top: 4px;
+  font-size: 110%;
+  font-family: Oswald;
 }
 
 .projectimg{
