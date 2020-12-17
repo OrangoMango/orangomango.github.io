@@ -1,6 +1,35 @@
 body{
-  background-image: url("img/background.png");
+  background-image: url("img/background.jpg");
   background-attachment: fixed;
+}
+
+#menu{
+  background-image: url("img/menu.jpg");
+  width: 100%;
+  height: 50px;
+}
+
+#menu p{
+  font-size: 170%;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+
+#navigator{
+  font-size: 140%;
+  padding-top: 5px;
+  text-align: center;
+  font-family: "Andika New Basic";
+  padding-right: 15px;
+}
+
+#navigator td{
+  padding-left: 50px;
+}
+
+#navigator a{
+  text-decoration: none;
+  color: black;
 }
 
 .projects{
@@ -67,7 +96,43 @@ body{
   border-radius: 20px;
 }
 
-.social a{
+#social a{
   text-decoration: none;
   color: yellow;
+}
+
+#programming-quiz{
+  font-size: 290%;
+  font-weight: bold;
+  color: orange;
+  font-family: "Russo One";
+}
+
+#pq-par{
+  font-size: 190%;
+  background: white;
+  opacity: 0.6;
+}
+
+#pq-b{
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(45deg, pink, yellow);
+  border-radius: 20px;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 150%;
+  font-family: "Russo One";
+}
+
+#pq-section a{
+  text-decoration: none;
+  color: green;
+}
+
+#yt-channel{
+  font-size: 290%;
+  font-weight: bold;
+  font-family: "Russo One";
+  color: white;
 }
