@@ -8,6 +8,11 @@ body{
   overflow-y: hidden;
 }
 
+a{
+  color: red;
+  text-decoration: none;
+}
+
 .project{
   width: 300px;
   height: 400px;
@@ -29,6 +34,13 @@ body{
   font-size: 300%;
   font-weight: bold;
   letter-spacing: 15px;
+}
+
+#sociallinks{
+  text-align: center;
+  color: lightgreen;
+  font-size: 300%;
+  font-weight: bold;
 }
 
 .projectdesc{
