@@ -8,10 +8,6 @@ body{
   overflow-y: hidden;
 }
 
-.projects::-webkit-scrollbar{
-  width: 0px;
-}
-
 .project{
   width: 300px;
   height: 400px;
