@@ -1,5 +1,15 @@
 body{
   background-image: url("img/background.png");
+  background-attachment: fixed;
+}
+
+.projects{
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.projects::-webkit-scrollbar{
+  width: 0px;
 }
 
 .project{
