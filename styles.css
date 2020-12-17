@@ -23,7 +23,7 @@ a{
 
 .projecttitle{
   text-align: center;
-  font-size: 220%;
+  font-size: 190%;
   font-weight: bold;
   color: red;
 }
@@ -46,7 +46,7 @@ a{
 .projectdesc{
   padding-left: 20px;
   padding-top: 8px;
-  font-size: 110%;
+  font-size: 90%;
 }
 
 .projectimg{
