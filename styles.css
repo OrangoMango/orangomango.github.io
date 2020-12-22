@@ -3,34 +3,28 @@ body{
   background-attachment: fixed;
 }
 
-#menu{
-  background-image: url("img/menu.jpg");
-  width: 100%;
-  height: 50px;
+.nav li{
+   display: inline;
+   list-style: none;
+   margin-right: 20px;
 }
 
-#menu p{
-  font-size: 110%;
-  padding-left: 10px;
-  padding-top: 8px;
-}
-
-#navigator{
-  font-size: 110%;
+.nav {
   padding-top: 5px;
-  text-align: center;
-  font-family: "Andika New Basic";
-  padding-right: 15px;
-  font-weight: bold;
 }
-
-#navigator td{
-  padding-left: 50px;
+      
+.nav a{
+   text-decoration: none;
+   color: black;
 }
-
-#navigator a{
-  text-decoration: none;
-  color: black;
+      
+#navt {
+   width: 100%;
+   background: yellow;
+}
+      
+#logo{
+   padding-left: 20px;
 }
 
 .projects{
