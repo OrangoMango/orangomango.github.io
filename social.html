@@ -7,24 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/ce1b7c4271.js" crossorigin="anonymous"></script>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
     <!-- Page Icon -->
     <link rel="icon" href="img/icon.jpeg">
     <title>Social</title>
+    <script>
+    $(function(){
+    $("#header").load("header.html");
+    });
+    </script>
   </head>
   <body>
   
-    <div id="menu">
-      <table width="100%"><tr>
-        <td><p style='font-family: "Langar";'>OrangoMango (Website under development)</p></td>
-        <td align="right"><table id="navigator">
-        <tr>
-        <td><a href="https://orangomango.github.io">HOME</a></td>
-        <td><a href="youtube.html">YOUTUBE</a></td>
-        <td><a href="social.html">SOCIAL</a></td>
-       </tr>
-       </table></td>
-      </tr></table>
-    </div>
+     <div id="header"></div>
   
     <p id="sociallinks" style='font-family: "Russo One";'>SOCIAL LINKS</p>
     <div id="social">

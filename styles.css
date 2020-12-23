@@ -6,7 +6,8 @@ body{
 .nav li{
    display: inline;
    list-style: none;
-   margin-right: 20px;
+   margin-right: 30px;
+   font-weight: bold;
 }
 
 .nav {
@@ -42,7 +43,7 @@ body{
 
 .projecttitle{
   text-align: center;
-  font-size: 170%;
+  font-size: 150%;
   font-weight: bold;
   color: red;
   font-family: "Langar";
