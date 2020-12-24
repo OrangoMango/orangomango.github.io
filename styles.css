@@ -84,8 +84,7 @@ body{
 .social-item{
   background: green;
   opacity: 0.6;
-  width: 280px;
-  height: 30px;
+  padding: 15px;
   font-size: 140%;
   text-align: center;
   border: solid black 2px;
