@@ -3,6 +3,16 @@ body{
 /*  background-attachment: fixed; */
 }
 
+#view-all{
+        font-size: 170%;
+        text-decoration: none;
+        text-align: right;
+        font-family: "Langar";
+}
+#view-all a{
+        color:  yellow;
+}
+
 .nav li{
    display: inline;
    list-style: none;
