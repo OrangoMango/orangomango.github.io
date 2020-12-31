@@ -1,0 +1,16 @@
+#title{
+  text-align: center;
+  color: yellow;
+  font-size: 300%;
+  font-weight: bold;
+  letter-spacing: 15px;
+}
+
+.container{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.container div{
+        margin: 50px;
+}
