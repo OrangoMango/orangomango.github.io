@@ -44,8 +44,8 @@ body{
 }
 
 .project{
-  width: 300px;
-  height: 400px;
+  width: 280px;
+  height: 380px;
   border: solid 2px black;
   border-radius: 24px;
   background: linear-gradient(yellow, red);
@@ -80,13 +80,13 @@ body{
 
 .projectdesc{
   padding-left: 20px;
+  padding-right: 10px;
   padding-top: 2px;
-  font-size: 110%;
   font-family: Oswald;
 }
 
 .projectimg{
-  padding-left: 50px;
+  padding-left: 45px;
   width: 200px;
   height: 200px;
 }
