@@ -24,7 +24,7 @@ body{
   height: 380px;
   border: solid 2px black;
   border-radius: 24px;
-  background: linear-gradient(yellow, red);
+  background: linear-gradient(blue, cyan);
 }
 
 .projecttitle{

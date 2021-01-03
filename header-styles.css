@@ -1,4 +1,4 @@
-* {
+*{
 	padding:  0;
 	margin: 0;
 }
@@ -8,30 +8,41 @@
 	float: left;
 	margin: 15px;
 	font-weight: bold;
+	color: red;
+	padding:  0;
 }
 
 .nav {
-	background: linear-gradient(to left, yellow, red);
+	background: linear-gradient(to left, cyan, blue);
 	text-align: right;
+	padding:  0;
+	margin: 0;
 }
 
 .nav ul{
 	list-style: none;
 	display: inline-flex;
+	padding:  0;
+	margin: 0;
 }
 
 .nav li{
 	margin: 15px;
+	padding:  0;
 }
 
 .nav ul li a{
 	text-decoration: none;
-	color: black;
+	color: white;
+	font-weight: bold;
 	padding: 10px;
+	margin: 0;
 }
 
 .nav ul li a:hover {
 	color: red;
 	background: orange;
 	border-radius: 10px;
+	padding:  0;
+	margin: 0;
 }
