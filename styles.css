@@ -1,6 +1,7 @@
 body{
   background-image: url("img/background.jpg");
-/*  background-attachment: fixed; */
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 #view-all{
@@ -11,31 +12,6 @@ body{
 }
 #view-all a{
         color:  yellow;
-}
-
-.nav li{
-   display: inline;
-   list-style: none;
-   margin-right: 30px;
-   font-weight: bold;
-}
-
-.nav {
-  padding-top: 5px;
-}
-      
-.nav a{
-   text-decoration: none;
-   color: black;
-}
-      
-#navt {
-   width: 100%;
-   background: yellow;
-}
-      
-#logo{
-   padding-left: 20px;
 }
 
 .projects{

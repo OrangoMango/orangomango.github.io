@@ -1,0 +1,37 @@
+* {
+	padding:  0;
+	margin: 0;
+}
+
+.logo {
+	display: inline-flex;
+	float: left;
+	margin: 15px;
+	font-weight: bold;
+}
+
+.nav {
+	background: linear-gradient(to left, yellow, red);
+	text-align: right;
+}
+
+.nav ul{
+	list-style: none;
+	display: inline-flex;
+}
+
+.nav li{
+	margin: 15px;
+}
+
+.nav ul li a{
+	text-decoration: none;
+	color: black;
+	padding: 10px;
+}
+
+.nav ul li a:hover {
+	color: red;
+	background: orange;
+	border-radius: 10px;
+}
