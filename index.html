@@ -22,14 +22,21 @@ Website created on 16/12/2020
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <!-- Page Icon -->
     <link rel="icon" href="img/icon.jpeg">
     <title>OrangoMango - Home</title>
+    
+    <script>
+       $(function(){
+         $("#header").load("header.html");
+       });
+    </script>
   </head>
   <body>
   
-      <iframe src="header.html" width="100%" frameBorder="0"></iframe>
+      <div id="header"></div>
   
     
     <p id="projtitle" style='font-family: "Russo One";'>MY PROJECTS</p>
