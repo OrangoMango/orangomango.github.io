@@ -10,23 +10,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Langar&display=swap" rel="stylesheet"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <!-- Page Icon -->
     <link rel="icon" href="img/icon.jpeg">
     <title>OrangoMango - Youtube</title>
-    <script>
-    $(function(){
-        $("#header").load("header.html");
-    });
-    </script>
     
     <style>
         #yt-tb {
                 table-layout: fixed;
         }
         
-        iframe {
+        table iframe {
                 position: absolute;
                 width: 100%;
                 height: 100%;
@@ -41,7 +35,7 @@
   </head>
   <body>
   
-    <div id="header"></div>
+    <iframe src="header.html" width="100%" frameBorder="0"></iframe>
   
     <p id="yt-channel">My YouTube channel videos</p>
     <table id="yt-tb" width="100%">
