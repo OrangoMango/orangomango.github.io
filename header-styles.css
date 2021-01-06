@@ -36,6 +36,9 @@
 
 .nav ul li a:hover {
 	color: red;
+}
+
+.nav ul li:hover {
 	background-color: orange;
 	border-radius: 10px;
 }
