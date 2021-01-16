@@ -27,6 +27,10 @@ body{
   background: linear-gradient(blue, cyan);
 }
 
+.project:hover {
+	box-shadow: 7px 7px #888888;
+}
+
 .projecttitle{
   text-align: center;
   font-size: 150%;
