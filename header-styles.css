@@ -12,8 +12,7 @@ body {
 	display: inline;
 	padding:  0;
 	font-weight: bold;
-	margin-top: 3px;
-	margin-left: 5px;
+	margin: 5px;
 	position: absolute;
 }
 
@@ -23,13 +22,13 @@ body {
 }
 
 .logo img {
-	margin-left: 5px;
+	 margin: 5px; 
 }
 
 .nav {
 	background: linear-gradient(to left, cyan, blue);
 	text-align: right;
-	padding:  0;
+	padding:  5px;
 	margin: 0;
 }
 
@@ -42,7 +41,7 @@ body {
 
 .nav li{
 	text-align: center;
-	padding: 2px;
+	padding: 5px;
 	margin: 5px;
 }
 
