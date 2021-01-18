@@ -30,7 +30,32 @@
     		
     		<script>
     			function send(){
-    				alert($("form").serializeArray());
+    				var input = document.getElementById("searchbox");
+    				var query = input.value;
+    				//alert(query);
+    				
+    				var container = document.getElementById("prg");
+    				var projects = container.getElementsByTagName("div");
+    				//alert(projects.length);
+    				for (i=0; i<projects.length; i++){
+    					var prg = projects[i];
+    					// alert(prg.innerHTML);
+    					var title = prg.getElementsByClassName("projecttitle")[0].innerHTML;
+    					var index = title.indexOf("<");
+    					//alert(index);
+    					if (index > -1){
+    						title = title.substring(0, index);
+    					}
+    					//alert(title);
+    					if (title.toLowerCase().indexOf(query.toLowerCase()) > -1){
+    						prg.style.display = ""; 
+    					} else {
+    						prg.style.display = "none";
+    					}
+    				}
+    				//alert(query);
+    				
+    				
     			}
     		</script>
         </head>
@@ -40,11 +65,9 @@
                 
                 <div id="title" style='font-family: "Russo One";'><br/>My Projects</div>
                 
-                <form onsubmit="send()">
-                	<input type="text" placeholder="Search..." name="q"></input>
-                </form>
+		<input id="searchbox" type="text" onkeyup="send()" placeholder="Search..." name="q"></input>
                 
-                <div class="container">
+                <div id="prg" class="container">
                         <div class="project">     <!-- BMI CALCULATOR -->
                                <p class="projecttitle">BMI Calculator <a href="https://youtu.be/SzP2DG0SvBo"><i class="fab fa-youtube"></i></a></p>
                                <a href="https://www.github.com/OrangoMango/BMICalculator" target="_blank"><img class="projectimg" src="../img/img5.jpeg" /></a>

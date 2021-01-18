@@ -17,3 +17,13 @@
         margin-top: 22px;
         margin-bottom: 22px;
 }
+
+#searchbox{
+	border: solid 2px black;
+	padding: 5px;
+	border-radius: 15px;
+	background-image: url("../img/search.svg");
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+}
