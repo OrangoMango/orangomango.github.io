@@ -23,16 +23,26 @@
                  <title>OrangoMango - All Projects</title>
                  
                  <script>
-       $(function(){
-         $("#header").load("../header.html");
-       });
-    </script>
+      			 $(function(){
+    				     $("#header").load("../header.html");
+     			  });
+    		</script>
+    		
+    		<script>
+    			function send(){
+    				alert($("form").serializeArray());
+    			}
+    		</script>
         </head>
         
         <body>
                 <div id="header"></div>
                 
                 <div id="title" style='font-family: "Russo One";'><br/>My Projects</div>
+                
+                <form onsubmit="send()">
+                	<input type="text" placeholder="Search..." name="q"></input>
+                </form>
                 
                 <div class="container">
                         <div class="project">     <!-- BMI CALCULATOR -->
