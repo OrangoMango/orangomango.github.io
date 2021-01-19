@@ -12,8 +12,8 @@
 }
 
 .container div{
-        margin-right: 12px;
-        margin-left: 12px;
+        margin-right: 8px;
+        margin-left: 8px;
         margin-top: 22px;
         margin-bottom: 22px;
 }
@@ -26,4 +26,13 @@
 	background-position: center right;
 	background-repeat: no-repeat;
 	background-origin: content-box;
+	width: 300px;
+}
+
+.nosearch{
+    font-size: 200%;
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
 }

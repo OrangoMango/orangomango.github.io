@@ -36,24 +36,29 @@
     				
     				var container = document.getElementById("prg");
     				var projects = container.getElementsByTagName("div");
+    				var found = 0;
     				//alert(projects.length);
     				for (i=0; i<projects.length; i++){
     					var prg = projects[i];
     					// alert(prg.innerHTML);
-    					var title = prg.getElementsByClassName("projecttitle")[0].innerHTML;
-    					var index = title.indexOf("<");
-    					//alert(index);
-    					if (index > -1){
-    						title = title.substring(0, index);
-    					}
+    					var title = prg.getElementsByClassName("projecttitle")[0].innerText;
     					//alert(title);
     					if (title.toLowerCase().indexOf(query.toLowerCase()) > -1){
     						prg.style.display = ""; 
+    						found++;
     					} else {
     						prg.style.display = "none";
     					}
     				}
     				//alert(query);
+    				var nosearch = document.getElementsByClassName("nosearch")[0];
+    			//	alert(found);
+    			//	alert(found == 0);
+    				if (found == 0){
+    				  nosearch.style.display = "";
+    				} else {
+    				  nosearch.style.display = "none";
+    				}
     				
     				
     			}
@@ -65,7 +70,9 @@
                 
                 <div id="title" style='font-family: "Russo One";'><br/>My Projects</div>
                 
-		<input id="searchbox" type="text" onkeyup="send()" placeholder="Search..." name="q"></input>
+		<input id="searchbox" type="text" onkeyup="send()" placeholder="Search..."></input>
+		
+		<div class="nosearch" style="display: none">Sorry, nothing matched your search... <div></div></div>
                 
                 <div id="prg" class="container">
                         <div class="project">     <!-- BMI CALCULATOR -->
