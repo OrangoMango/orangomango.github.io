@@ -75,7 +75,12 @@
     				if (found == 0){
     				  nosearch.style.display = "";
     				} else {
-    				  nosearch.style.display = "none";
+    				  if (query != ""){
+    			     	  nosearch.style.display = "";
+    			    	  nosearch.innerHTML = "Showing results for \""+query+"\"";
+    			       } else {
+    			          nosearch.style.display = "none";
+    			        }
     				}
     				
     				

@@ -69,4 +69,5 @@ body {
 	background-position: center right;
 	background-repeat: no-repeat;
 	background-origin: content-box;
+	width: 200px;
 }
