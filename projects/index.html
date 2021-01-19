@@ -29,9 +29,27 @@
     		</script>
     		
     		<script>
+    		    function getParam(){
+    		       //alert("hi")
+    		       var url_string = window.location.href;
+    		      // alert(url_string);
+    		       var url = new URL(url_string);
+    		       var q = url.searchParams.get("q");
+    		       return q;
+    		       
+    		    }
+    		    
+    		    //alert(getParam());
+    		
     			function send(){
     				var input = document.getElementById("searchbox");
-    				var query = input.value;
+    				var param = getParam();
+    				if (param == null){
+    			    	var query = input.value;
+    			    } else {
+    			        var query = param;
+    			    }
+    				
     				//alert(query);
     				
     				var container = document.getElementById("prg");
@@ -70,7 +88,7 @@
                 
                 <div id="title" style='font-family: "Russo One";'><br/>My Projects</div>
                 
-		<input id="searchbox" type="text" onkeyup="send()" placeholder="Search..."></input>
+            	<form><input id="searchbox" type="text" name="q" placeholder="Search..."></input></form>
 		
 		<div class="nosearch" style="display: none">Sorry, nothing matched your search... <div></div></div>
                 
@@ -197,6 +215,6 @@
                	          <p class="projectdesc"><font color="red">[To be continued]</font> ZombsAttack Python3 game</p>
                       </div>
                 </div>
-                
+             <script>send()</script>   
         </body>
 </html>
