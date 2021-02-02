@@ -31,6 +31,31 @@ body{
 	box-shadow: 7px 7px #888888;
 }
 
+.workingon{
+  background-color: lightblue;
+  opacity: 0.8;height: 300px;
+}
+
+.workingon p{
+  padding: 10px;
+  font-family: Oswald;
+  letter-spacing: 2px;
+}
+
+.workingonimg{
+  width: 300px;
+  height: fit-content;
+  right: 15px;
+  position: absolute;
+}
+
+.dwn{
+  width: 200px;
+  height: fit-content;
+  left: 25px;
+  position: absolute;
+}
+
 .projecttitle{
   text-align: center;
   font-size: 150%;
