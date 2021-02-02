@@ -43,7 +43,8 @@ body{
 }
 
 .workingonimg{
-  width: 300px;
+  width: 400px;
+  top: 150px;
   height: fit-content;
   right: 15px;
   position: absolute;
@@ -52,7 +53,7 @@ body{
 .dwn{
   width: 200px;
   height: fit-content;
-  left: 25px;
+  left: 150px;
   position: absolute;
 }
 
