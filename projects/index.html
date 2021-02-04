@@ -75,12 +75,15 @@
     				if (found == 0){
     				  nosearch.style.display = "";
     				  nosearch.innerHTML = "Sorry, nothing matched your search...";
+				  document.title = "OrangoMango - NoResult";
     				} else {
     				  if (query != ""){
     			     	  nosearch.style.display = "";
-    			    	  nosearch.innerHTML = "Showing results for \""+query+"\"";
+    			    	  nosearch.innerHTML = "Showing results for \""+query.toLowerCase()+"\"";
+				  document.title = "OrangoMango - Search \""+query.toLowerCase()+"\"";
     			       } else {
     			          nosearch.style.display = "none";
+				  document.title = "OrangoMango - All projects";
     			        }
     				}
     				
