@@ -34,7 +34,7 @@ body{
 .workingon {
   table-layout: fixed;
   width: 100%;
-  background: rgba(0, 255, 204, 0.8)
+  background-color: rgba(0, 255, 204, 0.8);
   text-align: center;
 }
 
