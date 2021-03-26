@@ -61,8 +61,9 @@
     					// alert(prg.innerHTML);
     					var title = prg.getElementsByClassName("projecttitle")[0].innerText;
 					var description = prg.getElementsByClassName("projectdesc")[0].innerText;
+					alert(description);
     					//alert(title);
-    					if ((title.toLowerCase().indexOf(query.toLowerCase()) > -1) or (description.toLowerCase().indexOf(query.toLowerCase()) > -1)){
+    					if ((title.toLowerCase().indexOf(query.toLowerCase()) > -1)){ // or (description.toLowerCase().indexOf(query.toLowerCase()) > -1)){
     						prg.style.display = ""; 
     						found++;
     					} else {
