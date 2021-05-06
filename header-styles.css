@@ -63,8 +63,7 @@ body {
 
 .search{
 	border: solid 2px black;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding: 5px;
 	border-radius: 15px;
 	background-image: url("img/search.svg");
 	background-position: center right;
