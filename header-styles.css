@@ -31,7 +31,7 @@ body {
 	margin: 0;
 }
 
-.nav li{
+.nav ul li{
 	text-align: center;
 	padding: 5px;
 	margin: 5px;
