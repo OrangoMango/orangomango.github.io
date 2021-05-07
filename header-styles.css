@@ -4,7 +4,16 @@ body {
 }
 
 .logo{
+	float: left;
 	margin: 3px;
+}
+
+.logo p{
+	display: inline;
+	padding:  0;
+	font-weight: bold;
+	margin: 5px;
+	position: absolute;
 }
 
 .logo a{
@@ -30,13 +39,13 @@ body {
 	margin: 0;
 }
 
-.nav ul li{
+.nav li{
 	text-align: center;
 	padding: 5px;
 	margin: 5px;
 }
 
-.nav ul a{
+.nav ul  a{
 	text-decoration: none;
 	color: white;
 	font-weight: bold;
