@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.logo{
+	float: left;
+	margin: 3px;
+}
+
+.logo p{
+	display: inline;
+	padding:  0;
+	font-weight: bold;
+	margin: 5px;
+	position: absolute;
+}
+
+.logo a{
+	text-decoration: none;
+	color: red;
+}
+
+.logo img {
+	 margin: 5px; 
+}
+
+.nav {
+	background: linear-gradient(to left, cyan, blue);
+	text-align: right;
+	padding:  5px;
+	margin: 0;
+}
+
+.nav ul{
+	list-style: none;
+	display: inline-flex;
+	padding:  0;
+	margin: 0;
+}
+
+.nav li{
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+}
+
+.nav ul  a{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 10px;
+}
+
+.nav ul li:hover a {
+	color: red;
+}
+
+.nav ul li:hover{
+	background: orange;
+	border-radius: 10px;
+}
+
+.search{
+	border: solid 2px black;
+	padding: 5px;
+	border-radius: 15px;
+	background-image: url("img/search.svg");
+	background-position: center right;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	width: 180px;
+}
