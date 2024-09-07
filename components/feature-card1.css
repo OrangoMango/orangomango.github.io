@@ -14,9 +14,8 @@
 .feature-card1-feature-card:hover {
   transform: scale(1.02);
 }
-.feature-card1-text {
-  align-self: center;
-  margin-bottom: var(--dl-space-space-twounits);
+.feature-card1-text1 {
+  margin-bottom: var(--dl-space-space-unit);
 }
 .feature-card1-container {
   gap: var(--dl-space-space-unit);
@@ -34,8 +33,6 @@
   object-fit: cover;
   border-radius: var(--dl-radius-radius-radius4);
 }
-
-
 
 
 
