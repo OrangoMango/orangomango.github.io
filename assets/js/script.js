@@ -40,7 +40,7 @@ const adventureData = {
         title: "Rocca della Verruca",
         video: "EyK2YEURmTs",
         desc: "A historic fortress located on the top of a mountain overlooking Calci (PI).",
-        imageCount: 3,
+        imageCount: 2,
         komootId: "1662620187",
         coords: "43.7126,10.5363"
     },
