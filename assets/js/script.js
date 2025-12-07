@@ -188,7 +188,7 @@ function loadAdventureDetail() {
     // Update Map
     let mapHTML = '';
     if (data.coords) {
-        mapHTML = `<iframe width="100%" height="100%" frameborder="0" style="border:0" src="http://googleusercontent.com/maps.google.com/maps?q=${data.coords}&z=10&output=embed" allowfullscreen></iframe>`;
+        mapHTML = `<iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://maps.google.com/maps?q=${data.coords}&z=10&output=embed" allowfullscreen></iframe>`;
     } else {
         mapHTML = '<div class="w-full h-full flex items-center justify-center text-slate-500">Map unavailable</div>';
     }
