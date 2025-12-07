@@ -52,7 +52,7 @@ const adventureData = {
         coords: "47.8596,16.8361"
     },
     'barcellona': {
-        title: "Barcellona",
+        title: "Barcelona",
         video: "jhimTUTofag",
         desc: "A major Spanish city showcasing iconic landmarks like the Sagrada Família, Park Güell, and the famous La Rambla boulevard.",
         imageCount: 6,
