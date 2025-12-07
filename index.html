@@ -1,675 +1,848 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>OrangoMango</title>
-    <meta property="og:title" content="OrangoMango" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+<html lang="en" class="scroll-smooth scroll-pt-24">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrangoMango - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#3b82f6',
+                        dark: '#0f172a',
+                        darker: '#020617',
+                        card: '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="icon.png" type="icon/png" sizes="32x32">
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
-
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background: var(--dl-color-gray-white);
-
-        null
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    />
-    <link
-      rel="shortcut icon"
-      href="public/websiteicon1.png"
-      type="icon/png"
-      sizes="32x32"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
-    
     <!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVPKFEV9XB"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVPKFEV9XB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-	  gtag('config', 'G-ZVPKFEV9XB');
-	</script>
-	
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5753059750056945"
-     crossorigin="anonymous"></script>
+      gtag('config', 'G-ZVPKFEV9XB');
+    </script>
+</head>
+<body class="bg-darker text-slate-300 font-sans antialiased selection:bg-primary selection:text-white flex flex-col min-h-screen">
 
-  </head>
-  <body>
-    <link rel="stylesheet" href="./style.css" />
-    <div>
-      <link href="./index.css" rel="stylesheet" />
-
-      <div class="home-container1">
-        <header data-role="Header" class="home-header">
-          <a
-            href="https://orangomango.github.io"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="home-link1"
-          >
-            <img
-              alt="logo"
-              src="public/external/websiteicon-1500h.png"
-              class="home-image1"
-            />
-          </a>
-          <div class="home-nav1">
-            <navigation-links-wrapper class="navigation-links-wrapper">
-              <!--NavigationLinks component-->
-              <nav
-                class="navigation-links-nav navigation-linksroot-class-name15"
-              >
-                <a href="/" class="navigation-links-link1"><span>Home</span></a>
-                <a
-                  href="https://mangogamesid.000webhostapp.com"
-                  class="navigation-links-link2"
-                >
-                  <span>MangoGames ID</span>
-                </a>
-                <a href="/apps" class="navigation-links-link3">
-                  <span>Apps and Games</span>
-                </a>
-                <a
-                  href="https://foojay.io/today/interview-with-paul-kocian-aka-orango_mango/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="navigation-links-link4"
-                >
-                  <span>About</span>
-                </a>
-              </nav>
-            </navigation-links-wrapper>
-          </div>
-          <div data-role="BurgerMenu" class="home-burger-menu">
-            <svg viewBox="0 0 1024 1024" class="home-icon10">
-              <path
-                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-              ></path>
-            </svg>
-          </div>
-          <div data-role="MobileMenu" class="home-mobile-menu">
-            <div class="home-nav2">
-              <div class="home-container2">
-                <img
-                  alt="image"
-                  src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-                  class="home-image2"
-                />
-                <div data-role="CloseMobileMenu" class="home-close-mobile-menu">
-                  <svg viewBox="0 0 1024 1024" class="home-icon12">
-                    <path
-                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-              <navigation-links-wrapper-mmkm
-                class="navigation-links-wrapper-mmkm"
-              >
-                <!--NavigationLinks component-->
-                <nav
-                  class="navigation-links-nav1 navigation-linksroot-class-name16"
-                >
-                  <a href="" class="navigation-links-link5">
-                    <span>About</span>
-                  </a>
-                  <a href="" class="navigation-links-link6">
-                    <span>Features</span>
-                  </a>
-                  <a href="" class="navigation-links-link7">
-                    <span>Pricing</span>
-                  </a>
-                  <a
-                    href=""
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="navigation-links-link8"
-                  >
-                    <span>Team</span>
-                  </a>
-                </nav>
-              </navigation-links-wrapper-mmkm>
-            </div>
-            <div>
-              <svg viewBox="0 0 950.8571428571428 1024" class="home-icon14">
-                <path
-                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                ></path></svg
-              ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon16">
-                <path
-                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                ></path></svg
-              ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon18">
-                <path
-                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </header>
-        <div class="home-hero">
-          <span class="home-text10">Java and javafx developer</span>
-          <h1 class="home-text11">OrangoMango</h1>
-          <div class="home-container3">
-            <a
-              href="https://www.github.com/OrangoMango"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="home-link2 button"
-            >
-              My GitHub
-            </a>
-            <a
-              href="https://orangomango.github.io/apps"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="home-link3 button"
-            >
-              MY GAMES
-            </a>
-          </div>
-        </div>
-        
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5753059750056945"
-			 crossorigin="anonymous"></script>
-		<!-- Unit Ad 1 -->
-		<ins class="adsbygoogle"
-			 style="display:block"
-			 data-ad-client="ca-pub-5753059750056945"
-			 data-ad-slot="1292621784"
-			 data-ad-format="auto"
-			 data-full-width-responsive="true"></ins>
-		<script>
-			 (adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
-        
-        <hero10-wrapper class="hero10-wrapper" rootclassname="hero10undefined">
-          <!--Hero10 component-->
-          <div class="hero10-container hero10root-class-name">
-            <div class="hero10-column thq-section-padding">
-              <div class="hero10-content">
-                <h1>
-                  <fragment class="home-fragment1">
-                    <span class="home-text12 thq-heading-1">
-                      <span class="home-text13">My best projects</span>
-                      <br />
-                      <span>(2020-2024)</span>
-                      <br />
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center">
+                    <img src="icon.png" alt="Logo" class="h-8 w-8 rounded-full mr-3 border border-slate-600">
+                    <span class="text-2xl font-bold text-white tracking-tight">
+                        Orango<span class="text-primary">Mango</span>
                     </span>
-                  </fragment>
+                </a>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-white px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="#projects" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+                        <a href="#cycling" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Cycling</a>
+                        <a href="https://mangogamesid.000webhostapp.com/" target="_blank" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">MangoGamesID</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="md:hidden hidden bg-card border-t border-slate-700" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#cycling" class="text-primary block w-full text-left px-3 py-2 rounded-md text-base font-medium">Cycling</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-20">
+        
+        <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden hero-bg pt-20 pb-10">
+            <div class="absolute inset-0 bg-darker/60"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+                <p class="text-primary font-bold mb-4 tracking-wide animate-fade-in">JAVA & JAVAFX DEVELOPER</p>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    Coding <br>
+                    <span class="gradient-text">from scratch</span>.
                 </h1>
-                <p>
-                  <fragment class="home-fragment2">
-                    <span class="home-text17 thq-body-large">
-                      Here is a quick showcase of my best projects since 2020
-                      when I started programming, all the way up to June 2024. 4
-                      years :)
-                    </span>
-                  </fragment>
+                <p class="max-w-2xl mx-auto text-lg md:text-xl text-slate-300 mb-10 leading-relaxed">
+                    I code Java applications, games, and my 3D engine without using heavy external libraries. I simply enjoy making stuff from scratch :)
                 </p>
-                <div class="hero10-actions">
-                  <button class="thq-button-filled hero10-button">
-                    <a
-                      href="https://youtu.be/npwdeEwLjpY?si=bHq31y9Y0DsnxyCy"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="hero10-action1"
-                    >
-                      <fragment class="home-fragment3">
-                        <span class="home-text18">Watch video</span>
-                      </fragment>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 flex-wrap">
+                    <a href="https://github.com/OrangoMango" target="_blank" class="px-8 py-4 rounded-full bg-primary text-white font-semibold hover:bg-amber-600 transition-all shadow-lg shadow-amber-500/25 flex items-center justify-center">
+                        GitHub <i class="fab fa-github ml-2"></i>
                     </a>
-                  </button>
+                    <a href="https://orangomango.itch.io/" target="_blank" class="px-8 py-4 rounded-full bg-[#fa5c5c] text-white font-semibold hover:bg-[#d93f3f] transition-all shadow-lg shadow-red-500/25 flex items-center justify-center">
+                        My games <i class="fab fa-itch-io ml-2"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@orangomango/" target="_blank" class="px-8 py-4 rounded-full bg-red-600/10 text-red-500 border border-red-600/20 font-semibold hover:bg-red-600 hover:text-white transition-all flex items-center justify-center">
+                        YouTube <i class="fab fa-youtube ml-2"></i>
+                    </a>
+                    <a href="https://www.instagram.com/_orangomango_/" target="_blank" class="px-8 py-4 rounded-full bg-pink-600/10 text-pink-500 border border-pink-600/20 font-semibold hover:bg-pink-600 hover:text-white transition-all flex items-center justify-center">
+                        Instagram <i class="fab fa-instagram ml-2"></i>
+                    </a>
+                        <a href="https://orangomango.github.io/Clock/" target="_blank" class="px-8 py-4 rounded-full bg-slate-700/50 text-white border border-slate-600 font-semibold hover:bg-slate-700 transition-all flex items-center justify-center">
+                        Clock <i class="fas fa-clock ml-2"></i>
+                    </a>
                 </div>
-              </div>
+                
+                <div class="mt-16 pt-8 border-t border-slate-600/30">
+                    <p class="text-sm text-slate-400 mb-4 uppercase tracking-wider">Core Technologies</p>
+                    <div class="flex justify-center gap-6 md:gap-10 text-2xl md:text-3xl text-slate-400 items-center">
+                        <i class="fab fa-java hover:text-orange-500 transition-colors cursor-default" title="Java"></i>
+                        <i class="fas fa-desktop hover:text-blue-400 transition-colors cursor-default" title="JavaFX"></i>
+                        <i class="fas fa-cube hover:text-purple-400 transition-colors cursor-default" title="3D Math"></i>
+                        <i class="fab fa-git-alt hover:text-red-500 transition-colors cursor-default" title="Git"></i>
+                        <i class="fab fa-linux hover:text-white transition-colors cursor-default" title="Linux"></i>
+                    </div>
+                </div>
             </div>
-            <img
-              alt="videoImage"
-              src="public/external/358408457-7d99ea3d-73f8-43ee-a88b-e6b927abcf68-200h.png"
-              class="hero10-image1"
-            />
-          </div>
-        </hero10-wrapper>
-        <div class="home-features">
-          <h1 class="home-text19">My latest apps</h1>
-          <div class="home-container4">
-            <feature-card1-wrapper class="feature-card1-wrapper">
-              <!--FeatureCard1 component-->
-              <a
-                href="https://orangomango.itch.io/logicsimulator"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <div
-                  class="feature-card1-feature-card feature-card1root-class-name"
-                >
-                  <h2 class="feature-card1-text1">
-                    <span>LogicSimulator</span>
-                  </h2>
-                  <div class="feature-card1-container">
-                    <img
-                      alt="image"
-                      src="public/external/msjfxb-200h.png"
-                      class="feature-card1-image"
-                    />
-                    <span><span>Circuit simulator made in Java</span></span>
-                  </div>
+        </section>
+
+        <section class="py-12 bg-dark border-y border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1 reveal">
+                        <h2 class="text-3xl font-bold text-white mb-4">Inside the <span class="text-primary">Engine</span></h2>
+                        <p class="text-slate-400 mb-6">
+                            This is my custom-built 3D rendering engine. Written entirely in Java without external 3D libraries. It handles rasterization, clipping, and lighting calculations manually. Its goal is to project your 3D scene on a 2D screen.
+                        </p>
+                        <div class="bg-amber-500/10 border-l-4 border-amber-500 p-4 mb-6 rounded-r">
+                            <p class="text-amber-200 text-sm">
+                                <i class="fas fa-hammer mr-2"></i> <strong>Work In Progress:</strong> This engine is not finished yet! I am currently working on adding new features and optimizations. Unfortunately it's not that easy
+                            </p>
+                        </div>
+                        <ul class="space-y-3 text-slate-300 mb-8">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Custom Matrix Math & Vectors</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Optimized for Raspberry Pi</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-3"></i> Real-time Rendering</li>
+                        </ul>
+                        
+                        <a href="engine.html" class="inline-flex px-6 py-3 rounded-lg bg-slate-800 border border-slate-600 text-white font-medium hover:bg-primary hover:border-primary hover:text-white transition-all items-center">
+                            View Progress Gallery (Images) <i class="fas fa-images ml-2"></i>
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-2 reveal delay-100">
+                        <div class="rounded-xl overflow-hidden border-2 border-slate-700 shadow-2xl relative group">
+                            <img src="assets/images/engine3d.gif" alt="3D Engine Demo" class="w-full object-cover opacity-90 group-hover:opacity-100 transition-opacity">
+                            <div class="absolute bottom-4 right-4 bg-black/70 px-3 py-1 rounded text-xs text-white backdrop-blur-sm">
+                                <i class="fas fa-code mr-1"></i> Shadows finally!
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a>
-            </feature-card1-wrapper>
-            <a
-              href="https://orangomango.itch.io/reflection"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <div class="home-feature-card1">
-                <h2 class="home-text20">Reflection</h2>
-                <div class="home-container5">
-                  <img
-                    alt="image"
-                    src="public/external/reflection-200h.png"
-                    class="home-image3"
-                  />
-                  <span>A laser maze game</span>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 bg-darker">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="mb-20 reveal">
+                    <div class="text-center mb-8">
+                        <span class="text-primary font-medium tracking-wide text-sm uppercase">Featured Video</span>
+                        <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">2020-2024 Showcase</h2>
+                    </div>
+                    <div class="bg-card rounded-2xl p-2 md:p-4 border border-slate-700/50 shadow-2xl max-w-4xl mx-auto">
+                        <div class="video-container bg-black rounded-xl">
+                            <iframe 
+                                src="https://www.youtube.com/embed/npwdeEwLjpY" 
+                                title="My apps and games (2020-2024)" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </a>
-            <feature-card1-wrapper-5wb3 class="feature-card1-wrapper-5wb3">
-              <!--FeatureCard1 component-->
-              <a
-                href="https://orangomango.itch.io/food-dice"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <div
-                  class="feature-card1-feature-card1 feature-card1root-class-name2"
-                >
-                  <h2 class="feature-card1-text3"><span>Food Dice</span></h2>
-                  <div class="feature-card1-container1">
-                    <img
-                      alt="image"
-                      src="public/external/daphsk-200h.png"
-                      class="feature-card1-image1"
-                    />
-                    <span>
-                      <span>Food platformer with a dice character</span>
-                    </span>
-                  </div>
+
+                <div class="mb-16">
+                    <div class="flex items-center gap-4 mb-8 reveal">
+                        <h3 class="text-2xl font-bold text-white whitespace-nowrap">My Best Projects</h3>
+                        <div class="h-px bg-slate-700 w-full"></div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="project-card bg-card rounded-xl overflow-hidden border-2 border-primary/20 reveal delay-100 group flex flex-col relative">
+                            <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">TOP PICK</div>
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/blockworld.png" alt="BlockWorld Voxel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                                </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">BlockWorld</h3>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">More like a voxel engine built from scratch. It features custom 3D rendering, block placing and breaking, terrain generation, and some other stuff.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">Java</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">3D Engine</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/BlockWorld" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-card rounded-xl overflow-hidden border-2 border-primary/20 reveal delay-100 group flex flex-col relative">
+                            <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">TOP PICK</div>
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/logicsim.png" alt="Circuit Board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">LogicSimulator</h3>
+                                    <div class="flex gap-2 text-slate-500 text-sm">
+                                        <i class="fas fa-globe" title="Web"></i>
+                                        <i class="fab fa-windows" title="Windows"></i>
+                                        <i class="fab fa-apple" title="macOS"></i>
+                                        <i class="fab fa-linux" title="Linux"></i>
+                                    </div>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">A logic gate simulator. Features chips, custom circuits, and save/load functionality. You can even build your own made calculator!</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-green-500/10 text-green-400 border border-green-500/20">JavaFX</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-green-500/10 text-green-400 border border-green-500/20">Simulation</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/LogicSimulator" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                    <a href="https://orangomango.itch.io/logic-simulator" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-card rounded-xl overflow-hidden border-2 border-primary/20 reveal delay-200 group flex flex-col relative">
+                            <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full z-10 shadow-lg">TOP PICK</div>
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/reflection.png" alt="Laser Lights" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">Reflection</h3>
+                                    <div class="flex gap-2 text-slate-500 text-sm">
+                                        <i class="fas fa-globe" title="Web"></i>
+                                        <i class="fab fa-android" title="Android"></i>
+                                        <i class="fab fa-windows" title="Windows"></i>
+                                        <i class="fab fa-apple" title="macOS"></i>
+                                        <i class="fab fa-linux" title="Linux"></i>
+                                    </div>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">A challenging laser maze puzzle game. Guide the beam to the target(s) using mirrors and splitters. More than 30 easy and hard levels available.</p>
+                                
+                                <div class="mb-4 bg-slate-800/80 border border-green-500/30 rounded-lg p-2 flex items-center gap-3">
+                                    <div class="bg-green-500/20 p-1.5 rounded-full text-green-400">
+                                        <i class="fab fa-google-play text-sm"></i>
+                                    </div>
+                                    <span class="text-xs text-green-400 font-medium">Coming soon to Google Play</span>
+                                </div>
+
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/20">Puzzle</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/20">JavaFX</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/Reflection" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                    <a href="https://orangomango.itch.io/reflection" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a>
-            </feature-card1-wrapper-5wb3>
-            <feature-card1-wrapper-edzs class="feature-card1-wrapper-edzs">
-              <!--FeatureCard1 component-->
-              <a
-                href="https://orangomango.itch.io/retoohs"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <div
-                  class="feature-card1-feature-card2 feature-card1root-class-name3"
-                >
-                  <h2 class="feature-card1-text5"><span>Retoohs</span></h2>
-                  <div class="feature-card1-container2">
-                    <img
-                      alt="image"
-                      src="public/external/shyz6z-200h.png"
-                      class="feature-card1-image2"
-                    />
-                    <span><span>A reversed shooter game</span></span>
-                  </div>
+
+                <div class="mb-16">
+                    <div class="flex items-center gap-4 mb-8 reveal">
+                        <h3 class="text-2xl font-bold text-white whitespace-nowrap">More Experiments & Games</h3>
+                        <div class="h-px bg-slate-700 w-full"></div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="project-card bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-200 group flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/flightsim.png" alt="Airplane Wing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">Flight Simulator</h3>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">A custom flight simulator built with my 3D engine showcasing 3D math, rotations and some other features.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-sky-500/10 text-sky-400 border border-sky-500/20">Linear Algebra</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-sky-500/10 text-sky-400 border border-sky-500/20">3D</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/FlightSimulator" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-200 group flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/chess.png" alt="Chess Board" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">Chess GUI</h3>
+                                    <div class="flex gap-2 text-slate-500 text-sm">
+                                        <i class="fas fa-globe" title="Web"></i>
+                                        <i class="fab fa-android" title="Android"></i>
+                                        <i class="fab fa-windows" title="Windows"></i>
+                                        <i class="fab fa-apple" title="macOS"></i>
+                                        <i class="fab fa-linux" title="Linux"></i>
+                                    </div>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">A full-featured Chess client made in JavaFX. Supports LAN play, Stockfish integration, and PGN export.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-slate-500/10 text-slate-300 border border-slate-500/20">Multiplayer</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-slate-500/10 text-slate-300 border border-slate-500/20">Stockfish</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/Chess" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                    <a href="https://orangomango.itch.io/chess" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-300 group flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/rubik.png" alt="Rubik Cube" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">Rubik's Cube 3D</h3>
+                                    <div class="flex gap-2 text-slate-500 text-sm">
+                                        <i class="fab fa-android" title="Android"></i>
+                                        <i class="fab fa-windows" title="Windows"></i>
+                                        <i class="fab fa-apple" title="macOS"></i>
+                                        <i class="fab fa-linux" title="Linux"></i>
+                                    </div>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">A 3D simulator and solver. Includes custom algorithms creation, 3x3x3 solver, and an Android version.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-orange-500/10 text-orange-400 border border-orange-500/20">JavaFX 3D</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-orange-500/10 text-orange-400 border border-orange-500/20">Algorithms</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/RubikCube" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                    <a href="https://orangomango.itch.io/rubik-cube" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play <i class="fas fa-gamepad ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-200 group flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/snake.png" alt="Snake Texture" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">Snake AI</h3>
+                                    <div class="flex gap-2 text-slate-500 text-sm">
+                                        <i class="fas fa-globe" title="Web"></i>
+                                        <i class="fab fa-android" title="Android"></i>
+                                        <i class="fab fa-windows" title="Windows"></i>
+                                        <i class="fab fa-apple" title="macOS"></i>
+                                        <i class="fab fa-linux" title="Linux"></i>
+                                    </div>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">Classic Snake game implementing Hamiltonian cycle and pathfinding algorithms for a perfect AI.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-green-500/10 text-green-400 border border-green-500/20">AI</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-green-500/10 text-green-400 border border-green-500/20">Algorithms</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/Snake" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                    <a href="https://orangomango.itch.io/snake" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-200 group flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/retoohs.png" alt="Zombie Shooter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">Retoohs</h3>
+                                    <div class="flex gap-2 text-slate-500 text-sm">
+                                        <i class="fas fa-globe" title="Web"></i>
+                                        <i class="fab fa-android" title="Android"></i>
+                                        <i class="fab fa-windows" title="Windows"></i>
+                                        <i class="fab fa-apple" title="macOS"></i>
+                                        <i class="fab fa-linux" title="Linux"></i>
+                                    </div>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">A "reversed shooter" where you control the zombies in order to stop the hero. And vice-versa, you play both roles!</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-red-500/10 text-red-400 border border-red-500/20">Strategy</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-red-500/10 text-red-400 border border-red-500/20">JavaFX</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-red-500/10 text-red-400 border border-red-500/20">GMTK Jam</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/Retoohs" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                    <a href="https://orangomango.itch.io/retoohs" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-200 group flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/railtheway.png" alt="Train Tracks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">RailTheWay</h3>
+                                    <div class="flex gap-2 text-slate-500 text-sm">
+                                        <i class="fas fa-globe" title="Web"></i>
+                                        <i class="fab fa-android" title="Android"></i>
+                                        <i class="fab fa-windows" title="Windows"></i>
+                                        <i class="fab fa-apple" title="macOS"></i>
+                                        <i class="fab fa-linux" title="Linux"></i>
+                                    </div>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">Strategy puzzle game. Guide trains to their correct stations by switching tracks at the right moment.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">Puzzle</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">Trains</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/RailTheWay" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                    <a href="https://orangomango.itch.io/railtheway" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="project-card bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-200 group flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/fooddice.png" alt="Dice" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <div class="flex justify-between items-start mb-2">
+                                    <h3 class="text-xl font-bold text-white">Food Dice</h3>
+                                    <div class="flex gap-2 text-slate-500 text-sm">
+                                        <i class="fas fa-globe" title="Web"></i>
+                                        <i class="fab fa-android" title="Android"></i>
+                                        <i class="fab fa-windows" title="Windows"></i>
+                                        <i class="fab fa-apple" title="macOS"></i>
+                                        <i class="fab fa-linux" title="Linux"></i>
+                                    </div>
+                                </div>
+                                <p class="text-slate-400 text-sm mb-4 flex-grow">My very first platformer game, where your abilities change based on the dice roll.</p>
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <span class="px-2 py-1 text-xs rounded-md bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">Platformer</span>
+                                    <span class="px-2 py-1 text-xs rounded-md bg-yellow-500/10 text-yellow-400 border border-yellow-500/20">GMTK Jam</span>
+                                </div>
+                                <div class="flex justify-between items-center mt-auto">
+                                    <a href="https://github.com/OrangoMango/FoodDice" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors"><i class="fab fa-github mr-2"></i> Source</a>
+                                    <a href="https://orangomango.itch.io/food-dice" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-              </a>
-            </feature-card1-wrapper-edzs>
-            <a
-              href="https://orangomango.itch.io/railtheway"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <div class="home-feature-card2">
-                <h2 class="home-text22">RailTheWay</h2>
-                <div class="home-container6">
-                  <img
-                    alt="image"
-                    src="public/external/nabe2c-200h.png"
-                    class="home-image4"
-                  />
-                  <span>Guide the trains to their station</span>
+                
+                <div class="text-center mt-12">
+                    <a href="https://github.com/OrangoMango?tab=repositories" target="_blank" class="inline-flex items-center text-slate-400 hover:text-white transition-colors">
+                        View all repositories on GitHub <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    </a>
                 </div>
-              </div>
-            </a>
-            <feature-card1-wrapper-civb class="feature-card1-wrapper-civb">
-              <!--FeatureCard1 component-->
-              <a
-                href="https://orangomango.itch.io/rubik-cube"
-                target="_blank"
-                rel="noreferrer noopener"
-              >
-                <div
-                  class="feature-card1-feature-card3 feature-card1root-class-name6"
-                >
-                  <h2 class="feature-card1-text7"><span>Rubik's cube</span></h2>
-                  <div class="feature-card1-container3">
-                    <img
-                      alt="image"
-                      src="public/external/obmb5t-200h.png"
-                      class="feature-card1-image3"
-                    />
-                    <span><span>Rubik's cube simulator and solver</span></span>
-                  </div>
+            </div>
+        </section>
+
+        <section class="h-[60vh] bg-fixed bg-center bg-cover flex items-center justify-center relative drone-bg">
+            <div class="absolute inset-0 bg-black/30"></div>
+            <div class="relative z-10 text-center p-4 border-2 border-white/20 rounded-xl mx-4 backdrop-blur-sm">
+                <h3 class="text-2xl md:text-3xl font-bold text-white tracking-widest uppercase drop-shadow-lg">Marina Di Pisa</h3>
+                <p class="text-slate-100 mt-2 font-medium drop-shadow-md">28 Jul 2025</p>
+            </div>
+        </section>
+
+        <section id="cycling" class="py-20 bg-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-12 reveal">
+                    <span class="text-primary font-medium tracking-wide text-sm uppercase">My Passion other than coding</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">Cycling 🚵</h2>
+                    <p class="text-slate-400 mt-4 max-w-2xl mx-auto">I also go for a ride in my free time :)</p>
                 </div>
-              </a>
-            </feature-card1-wrapper-civb>
-          </div>
+
+                <div class="mb-20 reveal delay-100">
+                    <h3 class="text-2xl font-bold text-white mb-6 pl-2 border-l-4 border-primary text-left">2025 Season Trailer</h3>
+                    <div class="bg-card rounded-2xl p-2 md:p-4 border border-slate-700/50 shadow-2xl">
+                        <div class="video-container bg-black rounded-xl">
+                            <iframe 
+                                src="https://www.youtube.com/embed/_3no3X5sdFo" 
+                                title="2025 Cycling Trailer" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 flex flex-col md:flex-row items-center justify-between gap-6 bg-card/50 p-6 rounded-xl border border-slate-700/50 backdrop-blur-sm">
+                        <div class="flex flex-col md:flex-row items-center gap-8 w-full">
+                            <div class="text-center sm:text-left">
+                                <div class="text-3xl font-bold text-white">9,000+ <span class="text-primary text-lg">km</span></div>
+                                <div class="text-slate-400 text-sm">Total Distance Ridden</div>
+                            </div>
+                            <div class="hidden sm:block w-px h-12 bg-slate-700"></div>
+                            <div class="text-center sm:text-left">
+                                <div class="text-lg font-bold text-white">Italy • Austria</div>
+                                <div class="text-slate-400 text-sm">Adventures on Komoot</div>
+                            </div>
+                            <div class="hidden md:block w-px h-12 bg-slate-700"></div>
+                            <div class="text-center sm:text-left flex-grow">
+                                <div class="text-sm font-bold text-white mb-1">Highlights:</div>
+                                <div class="flex flex-wrap justify-center sm:justify-start gap-2">
+                                    <span class="px-2 py-1 text-xs rounded bg-slate-700 text-slate-300">Schneeberg</span>
+                                    <span class="px-2 py-1 text-xs rounded bg-slate-700 text-slate-300">Marina di Pisa</span>
+                                    <span class="px-2 py-1 text-xs rounded bg-slate-700 text-slate-300">Malbacco</span>
+                                    <span class="px-2 py-1 text-xs rounded bg-slate-700 text-slate-300">Quercianella</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="https://www.komoot.com/user/4073072632440" target="_blank" class="w-full md:w-auto px-8 py-3 rounded-lg bg-[#93bf33]/10 text-[#93bf33] border border-[#93bf33]/20 font-semibold hover:bg-[#93bf33] hover:text-black transition-all flex items-center justify-center whitespace-nowrap">
+                            Follow on Komoot <i class="fas fa-map-marked-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="mb-20">
+                    <h3 class="text-2xl font-bold text-white mb-8 pl-2 border-l-4 border-secondary text-left">Best Edits</h3>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        
+                        <div class="bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal group hover:border-secondary/50 transition-colors flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/drone/summer2025/0.JPG" alt="Summer 2025" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h4 class="font-bold text-white text-lg">Summer 2025</h4>
+                                <p class="text-slate-400 text-sm mb-4">Some seasonal highlights</p>
+                                <a href="adventure.html?id=summer2025" class="mt-auto block w-full py-2 bg-slate-800 hover:bg-secondary text-white text-sm rounded transition-colors text-center">
+                                    View Gallery <i class="fas fa-images ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-100 group hover:border-secondary/50 transition-colors flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/drone/malbacco/0.JPG" alt="Malbacco" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h4 class="font-bold text-white text-lg">Malbacco</h4>
+                                <p class="text-slate-400 text-sm mb-4">Ride through some natural waterfalls</p>
+                                <a href="adventure.html?id=malbacco" class="mt-auto block w-full py-2 bg-slate-800 hover:bg-secondary text-white text-sm rounded transition-colors text-center">
+                                    View Gallery <i class="fas fa-images ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-200 group hover:border-secondary/50 transition-colors flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/drone/schneeberg/0.JPG" alt="Schneeberg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h4 class="font-bold text-white text-lg">Schneeberg</h4>
+                                <p class="text-slate-400 text-sm mb-4">Alpine Climb in Austria</p>
+                                <a href="adventure.html?id=schneeberg" class="mt-auto block w-full py-2 bg-slate-800 hover:bg-secondary text-white text-sm rounded transition-colors text-center">
+                                    View Gallery <i class="fas fa-images ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-300 group hover:border-secondary/50 transition-colors flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/drone/cesenatico/0.JPG" alt="Cesenatico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h4 class="font-bold text-white text-lg">Cesenatico</h4>
+                                <p class="text-slate-400 text-sm mb-4">Math Olympiad 2024 and 2025</p>
+                                <a href="adventure.html?id=cesenatico" class="mt-auto block w-full py-2 bg-slate-800 hover:bg-secondary text-white text-sm rounded transition-colors text-center">
+                                    View Gallery <i class="fas fa-images ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-card rounded-xl overflow-hidden border border-slate-700/50 reveal delay-400 group hover:border-secondary/50 transition-colors flex flex-col">
+                            <div class="h-48 bg-slate-700 relative overflow-hidden">
+                                <img src="assets/images/drone/quercianella/0.JPG" alt="Quercianella" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="p-4 flex flex-col flex-grow">
+                                <h4 class="font-bold text-white text-lg">Quercianella</h4>
+                                <p class="text-slate-400 text-sm mb-4">My first 100km ride</p>
+                                <a href="adventure.html?id=quercianella" class="mt-auto block w-full py-2 bg-slate-800 hover:bg-secondary text-white text-sm rounded transition-colors text-center">
+                                    View Gallery <i class="fas fa-images ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="mb-12 reveal">
+                    <div class="bg-gradient-to-r from-slate-800 to-slate-900 border border-slate-700/50 rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 shadow-lg">
+                        <div class="flex-shrink-0 bg-white/5 p-4 rounded-full border border-white/10">
+                            <i class="fas fa-helicopter text-3xl text-white"></i>
+                        </div>
+                        <div class="flex-grow text-center md:text-left">
+                            <h4 class="text-xl font-bold text-white mb-2">Cinematic footage captured with my <span class="text-primary">DJI Mini 4K</span></h4>
+                            <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-sm text-slate-400">
+                                <span class="flex items-center"><i class="fas fa-video mr-2 text-slate-500"></i> 4K/30fps Video</span>
+                                <span class="flex items-center"><i class="fas fa-weight-hanging mr-2 text-slate-500"></i> < 249g Ultralight</span>
+                                <span class="flex items-center"><i class="fas fa-wind mr-2 text-slate-500"></i> Level 5 Wind Resistance</span>
+                                <span class="flex items-center"><i class="fas fa-clock mr-2 text-slate-500"></i> 31-Min Flight Time</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-16">
+                    <h3 class="text-2xl font-bold text-white mb-8 pl-2 border-l-4 border-green-500 text-left">More Adventures</h3>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        
+                        <a href="adventure.html?id=verruca" class="adventure-card group relative h-48 md:h-64 rounded-xl overflow-hidden cursor-pointer block">
+                            <img src="assets/images/drone/verruca/0.JPG" alt="Rocca della Verruca" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <h4 class="text-white font-bold text-sm md:text-base">Rocca della Verruca</h4>
+                                <div class="flex items-center text-xs text-green-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span>Click to view</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="adventure.html?id=podersdorf" class="adventure-card group relative h-48 md:h-64 rounded-xl overflow-hidden cursor-pointer block">
+                            <img src="assets/images/drone/podersdorf/0.JPG" alt="Podersdorf am see" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <h4 class="text-white font-bold text-sm md:text-base">Podersdorf am See</h4>
+                                <div class="flex items-center text-xs text-green-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span>Click to view</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="adventure.html?id=barcellona" class="adventure-card group relative h-48 md:h-64 rounded-xl overflow-hidden cursor-pointer block">
+                            <img src="assets/images/drone/barcellona/0.JPG" alt="Barcellona" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <h4 class="text-white font-bold text-sm md:text-base">Barcelona</h4>
+                                <div class="flex items-center text-xs text-green-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span>Click to view</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="adventure.html?id=caprona" class="adventure-card group relative h-48 md:h-64 rounded-xl overflow-hidden cursor-pointer block">
+                            <img src="assets/images/drone/caprona/0.JPG" alt="Torretta di Caprona" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <h4 class="text-white font-bold text-sm md:text-base">Torretta di Caprona</h4>
+                                <div class="flex items-center text-xs text-green-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span>Click to view</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="adventure.html?id=marina" class="adventure-card group relative h-48 md:h-64 rounded-xl overflow-hidden cursor-pointer block">
+                            <img src="assets/images/drone/marina/0.JPG" alt="Marina di Pisa" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <h4 class="text-white font-bold text-sm md:text-base">Marina di Pisa</h4>
+                                <div class="flex items-center text-xs text-green-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span>Click to view</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="adventure.html?id=monteprana" class="adventure-card group relative h-48 md:h-64 rounded-xl overflow-hidden cursor-pointer block">
+                            <img src="assets/images/drone/monteprana/0.JPG" alt="Monte Prana" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <h4 class="text-white font-bold text-sm md:text-base">Monte Prana</h4>
+                                <div class="flex items-center text-xs text-green-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span>Click to view</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="adventure.html?id=pisa" class="adventure-card group relative h-48 md:h-64 rounded-xl overflow-hidden cursor-pointer block">
+                            <img src="assets/images/drone/pisa/0.JPG" alt="Pisa" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <h4 class="text-white font-bold text-sm md:text-base">Pisa</h4>
+                                <div class="flex items-center text-xs text-green-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span>Click to view</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="adventure.html?id=lucca" class="adventure-card group relative h-48 md:h-64 rounded-xl overflow-hidden cursor-pointer block">
+                            <img src="assets/images/drone/lucca/0.JPG" alt="Lucca" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90"></div>
+                            <div class="absolute bottom-3 left-3 right-3">
+                                <h4 class="text-white font-bold text-sm md:text-base">Lucca</h4>
+                                <div class="flex items-center text-xs text-green-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <span>Click to view</span> <i class="fas fa-arrow-right ml-1"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-20 bg-darker border-t border-slate-800"> <!-- TODO: Add each game jam theme -->
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 reveal">
+                    <span class="text-primary font-medium tracking-wide text-sm uppercase">48 Hours of Code</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mt-2">GMTK Game Jam History</h2>
+                    <p class="text-slate-400 mt-2">Every year, I challenge myself to build a game from scratch in just 2 days.</p>
+                </div>
+
+                <div class="relative timeline-line max-w-3xl mx-auto px-4">
+
+                    <div class="relative mb-12 md:flex flex-row-reverse items-center justify-between reveal">
+                        <div class="absolute left-[11px] md:left-1/2 md:-ml-[9px] top-6 w-5 h-5 rounded-full bg-dark border-4 border-primary z-10"></div>
+                        <div class="ml-10 md:ml-0 md:w-[45%] bg-card p-6 rounded-xl border border-slate-700/50 shadow-lg relative group hover:border-primary/50 transition-colors">
+                            <span class="absolute top-4 right-4 text-xs font-bold text-primary bg-primary/10 px-2 py-1 rounded">2025</span>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-white">EchoBeat</h3>
+                                <div class="flex gap-2 text-slate-500 text-sm mr-12">
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                </div>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-4">A rhythm-based memory game with different game modes available.</p>
+                            <a href="https://orangomango.itch.io/echobeat" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play Entry <i class="fas fa-external-link-alt ml-1"></i></a>
+                        </div>
+                        <div class="hidden md:block w-[45%] text-right pr-8">
+                            <span class="text-5xl font-bold text-slate-800">2025</span>
+                        </div>
+                    </div>
+
+                    <div class="relative mb-12 md:flex items-center justify-between reveal">
+                        <div class="absolute left-[11px] md:left-1/2 md:-ml-[9px] top-6 w-5 h-5 rounded-full bg-dark border-4 border-secondary z-10"></div>
+                        <div class="ml-10 md:ml-0 md:w-[45%] bg-card p-6 rounded-xl border border-slate-700/50 shadow-lg relative group hover:border-secondary/50 transition-colors">
+                            <span class="absolute top-4 right-4 text-xs font-bold text-secondary bg-secondary/10 px-2 py-1 rounded">2024</span>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-white">AstroRunner</h3>
+                                <div class="flex gap-2 text-slate-500 text-sm mr-12">
+                                    <i class="fas fa-globe" title="Web"></i>
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                </div>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-4">Spaceship obstacle game featuring a custom 3D perspective implementation.</p>
+                            <a href="https://orangomango.itch.io/astrorunner" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                        </div>
+                        <div class="hidden md:block w-[45%] text-left pl-8">
+                            <span class="text-5xl font-bold text-slate-800">2024</span>
+                        </div>
+                    </div>
+
+                    <div class="relative mb-12 md:flex flex-row-reverse items-center justify-between reveal">
+                        <div class="absolute left-[11px] md:left-1/2 md:-ml-[9px] top-6 w-5 h-5 rounded-full bg-dark border-4 border-red-500 z-10"></div>
+                        <div class="ml-10 md:ml-0 md:w-[45%] bg-card p-6 rounded-xl border border-slate-700/50 shadow-lg relative group hover:border-red-500/50 transition-colors">
+                            <span class="absolute top-4 right-4 text-xs font-bold text-red-400 bg-red-500/10 px-2 py-1 rounded">2023</span>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-white">Retoohs</h3>
+                                <div class="flex gap-2 text-slate-500 text-sm mr-12">
+                                    <i class="fas fa-globe" title="Web"></i>
+                                    <i class="fab fa-android" title="Android"></i>
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                </div>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-4">"Shooter" reversed. You play as the zombie horde trying to stop the hero and vice-versa.</p>
+                            <a href="https://orangomango.itch.io/retoohs" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                        </div>
+                        <div class="hidden md:block w-[45%] text-right pr-8">
+                            <span class="text-5xl font-bold text-slate-800">2023</span>
+                        </div>
+                    </div>
+
+                    <div class="relative mb-12 md:flex items-center justify-between reveal">
+                        <div class="absolute left-[11px] md:left-1/2 md:-ml-[9px] top-6 w-5 h-5 rounded-full bg-dark border-4 border-lime-500 z-10"></div>
+                        <div class="ml-10 md:ml-0 md:w-[45%] bg-card p-6 rounded-xl border border-slate-700/50 shadow-lg relative group hover:border-lime-500/50 transition-colors">
+                            <span class="absolute top-4 right-4 text-xs font-bold text-lime-400 bg-lime-500/10 px-2 py-1 rounded">2022</span>
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="text-xl font-bold text-white">Food Dice</h3>
+                                <div class="flex gap-2 text-slate-500 text-sm mr-12">
+                                    <i class="fas fa-globe" title="Web"></i>
+                                    <i class="fab fa-android" title="Android"></i>
+                                    <i class="fab fa-windows" title="Windows"></i>
+                                    <i class="fab fa-apple" title="macOS"></i>
+                                    <i class="fab fa-linux" title="Linux"></i>
+                                </div>
+                            </div>
+                            <p class="text-slate-400 text-sm mb-4">A platformer game where you play as a dice. Randomly rolled abilities change how you complete the level.</p>
+                            <a href="https://orangomango.itch.io/food-dice" target="_blank" class="text-white hover:text-primary text-sm font-medium transition-colors">Play in Browser <i class="fas fa-globe ml-1"></i></a>
+                        </div>
+                        <div class="hidden md:block w-[45%] text-left pl-8">
+                            <span class="text-5xl font-bold text-slate-800">2022</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="pi-section" class="py-12 bg-darker border-t border-slate-800">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-2xl font-bold text-white mb-6">Fun Fact: I Memorized <span class="text-primary">π</span></h3>
+                <p class="text-slate-400 mb-6">Here are the first 156 decimal digits:</p>
+                <div class="bg-card p-6 rounded-xl border border-slate-700/50 font-mono text-sm md:text-base text-slate-300 break-words leading-loose tracking-wider shadow-inner">
+                    3.141592653589793238462643383279502884197169399375105820974944592307816406286208998628034825342117067982148086513282306647093844609550582231725359408128481117
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-darker py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-slate-500 text-sm mb-4 md:mb-0">
+                © 2026 OrangoMango. All rights reserved.
+            </p>
+            <div class="flex space-x-6 text-sm text-slate-500">
+                <a href="https://github.com/OrangoMango" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                <a href="https://orangomango.itch.io/" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-itch-io text-xl text-red-400"></i></a>
+                <a href="#" class="hover:text-white transition-colors"><i class="fas fa-code text-xl text-orange-500"></i></a>
+            </div>
         </div>
-        <div class="home-gallery">
-          <h1 class="home-text24">My 3D engine made in Java</h1>
-          <a
-            href="https://twitter.com/orango_mango"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="home-link6 button"
-          >
-            Follow progress on Twitter
-          </a>
-          <span class="home-text25">
-            Here are some pictures about my 3D engine made completely from
-            scratch in Java. The GitHub repository includes also a
-            Minecraft-clone that supports different types of blocks,
-            transparency and the engine features (shadows, lights, clipping,
-            ...)
-          </span>
-          <div class="home-container7">
-            <gallery-card3-wrapper class="gallery-card3-wrapper">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card gallery-card3root-class-name"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%202023-04-03%201947131-1500h.png"
-                  class="gallery-card3-image"
-                />
-                <div class="gallery-card3-container">
-                  <h1 class="gallery-card3-text1">
-                    <span>Minecraft clone</span>
-                  </h1>
-                  <span class="gallery-card3-text2">
-                    <span>Rendering trees</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper>
-            <gallery-card3-wrapper-d793 class="gallery-card3-wrapper-d793">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card1 gallery-card3root-class-name1"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-01-19%2018-52-43-1500w.png"
-                  class="gallery-card3-image1"
-                />
-                <div class="gallery-card3-container1">
-                  <h1 class="gallery-card3-text3"><span>3D Engine</span></h1>
-                  <span class="gallery-card3-text4">
-                    <span>Loading custom obj files</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-d793>
-            <gallery-card3-wrapper-8jsi class="gallery-card3-wrapper-8jsi">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card2 gallery-card3root-class-name3"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-02-04%2019-18-38-1500w.png"
-                  class="gallery-card3-image2"
-                />
-                <div class="gallery-card3-container2">
-                  <h1 class="gallery-card3-text5"><span>3D Engine</span></h1>
-                  <span class="gallery-card3-text6"><span>Lights!</span></span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-8jsi>
-            <gallery-card3-wrapper-nk3j class="gallery-card3-wrapper-nk3j">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card3 gallery-card3root-class-name2"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-02-10%2014-07-101-1500h.png"
-                  class="gallery-card3-image3"
-                />
-                <div class="gallery-card3-container3">
-                  <h1 class="gallery-card3-text7"><span>3D Engine</span></h1>
-                  <span class="gallery-card3-text8">
-                    <span>Rotating lights</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-nk3j>
-            <gallery-card3-wrapper-w075 class="gallery-card3-wrapper-w075">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card4 gallery-card3root-class-name4"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-03-24%2019-32-11-1500h.png"
-                  class="gallery-card3-image4"
-                />
-                <div class="gallery-card3-container4">
-                  <h1 class="gallery-card3-text9">
-                    <span>Minecraft clone</span>
-                  </h1>
-                  <span class="gallery-card3-text10">
-                    <span>Breaking and placing blocks</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-w075>
-            <gallery-card3-wrapper-blfa class="gallery-card3-wrapper-blfa">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card5 gallery-card3root-class-name5"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-03-25%2017-05-34-1500h.png"
-                  class="gallery-card3-image5"
-                />
-                <div class="gallery-card3-container5">
-                  <h1 class="gallery-card3-text11">
-                    <span>Minecraft clone</span>
-                  </h1>
-                  <span class="gallery-card3-text12">
-                    <span>Rendering some trees</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-blfa>
-            <gallery-card3-wrapper-ekt0 class="gallery-card3-wrapper-ekt0">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card6 gallery-card3root-class-name6"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-04-10%2013-28-14-1500h.png"
-                  class="gallery-card3-image6"
-                />
-                <div class="gallery-card3-container6">
-                  <h1 class="gallery-card3-text13">
-                    <span>Minecraft clone</span>
-                  </h1>
-                  <span class="gallery-card3-text14">
-                    <span>Rendering flowers (sprites)</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-ekt0>
-            <gallery-card3-wrapper-3e35 class="gallery-card3-wrapper-3e35">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card7 gallery-card3root-class-name7"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-05-01%2011-49-43-1500h.png"
-                  class="gallery-card3-image7"
-                />
-                <div class="gallery-card3-container7">
-                  <h1 class="gallery-card3-text15">
-                    <span>Minecraft clone</span>
-                  </h1>
-                  <span class="gallery-card3-text16">
-                    <span>Trying to render some water</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-3e35>
-            <gallery-card3-wrapper-1qq2 class="gallery-card3-wrapper-1qq2">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card8 gallery-card3root-class-name8"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-08-23%2013-48-16-1500h.png"
-                  class="gallery-card3-image8"
-                />
-                <div class="gallery-card3-container8">
-                  <h1 class="gallery-card3-text17"><span>Engine 3D</span></h1>
-                  <span class="gallery-card3-text18">
-                    <span>Refactoring</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-1qq2>
-            <gallery-card3-wrapper-sgl7 class="gallery-card3-wrapper-sgl7">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card9 gallery-card3root-class-name9"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-08-25%2013-26-18-1500h.png"
-                  class="gallery-card3-image9"
-                />
-                <div class="gallery-card3-container9">
-                  <h1 class="gallery-card3-text19"><span>Engine 3D</span></h1>
-                  <span class="gallery-card3-text20">
-                    <span>Fixed issues with translucent blocks</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-sgl7>
-            <gallery-card3-wrapper-ve0t class="gallery-card3-wrapper-ve0t">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card10 gallery-card3root-class-name10"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/screenshot%20from%202023-09-04%2019-22-38-1500h.png"
-                  class="gallery-card3-image10"
-                />
-                <div class="gallery-card3-container10">
-                  <h1 class="gallery-card3-text21">
-                    <span>Minecraft clone</span>
-                  </h1>
-                  <span class="gallery-card3-text22">
-                    <span>Refactoring and day-night cycle</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-ve0t>
-            <gallery-card3-wrapper-9rim class="gallery-card3-wrapper-9rim">
-              <!--GalleryCard3 component-->
-              <div
-                class="gallery-card3-gallery-card11 gallery-card3root-class-name11"
-              >
-                <img
-                  alt="image"
-                  src="public/engine3d/282094041-3328cf0f-0d04-4dd2-bab1-9eea17385e0e-1500h.png"
-                  class="gallery-card3-image11"
-                />
-                <div class="gallery-card3-container11">
-                  <h1 class="gallery-card3-text23">
-                    <span>Flight simulator</span>
-                  </h1>
-                  <span class="gallery-card3-text24">
-                    <span>A very simple flight simulator</span>
-                  </span>
-                </div>
-              </div>
-            </gallery-card3-wrapper-9rim>
-          </div>
-        </div>
-        <footer class="home-footer">
-          <a
-            href="https://orangomango.github.io"
-            target="_blank"
-            rel="noreferrer noopener"
-            class="home-link7"
-          >
-            <img
-              alt="logo"
-              src="public/external/websiteicon-1500h.png"
-              class="home-image5"
-            />
-          </a>
-          <span class="home-text26">
-            Website made by Paul Kocian (aka OrangoMango)
-          </span>
-          <div class="home-icon-group2">
-            <a
-              href="https://twitter.com/orango_mango"
-              target="_blank"
-              rel="noreferrer noopener"
-              class="home-link8"
-            >
-              <svg viewBox="0 0 950.8571428571428 1024" class="home-icon20">
-                <path
-                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                ></path>
-              </svg>
-            </a>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </body>
+    </footer>
+
+    <button id="scroll-to-top-btn" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center translate-y-20 opacity-0 transition-all duration-300 z-50 hover:bg-amber-600 focus:outline-none" onclick="scrollToTop()" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/script.js"></script>
+</body>
 </html>

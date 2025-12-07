@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrangoMango - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        primary: '#f59e0b', 
+                        secondary: '#3b82f6', 
+                        dark: '#0f172a', 
+                        darker: '#020617', 
+                        card: '#1e293b', 
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="icon.png" type="icon/png" sizes="32x32">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVPKFEV9XB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZVPKFEV9XB');
+    </script>
+</head>
+<body class="about-bg text-slate-300 font-sans antialiased flex flex-col min-h-screen relative">
+
+    <div class="fixed inset-0 bg-darker/70 pointer-events-none z-0"></div>
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center">
+                    <img src="icon.png" alt="Logo" class="h-8 w-8 rounded-full mr-3 border border-slate-600">
+                    <span class="text-2xl font-bold text-white tracking-tight">
+                        Orango<span class="text-primary">Mango</span>
+                    </span>
+                </a>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="index.html#projects" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+                        <a href="index.html#cycling" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Cycling</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden hidden bg-card border-t border-slate-700" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 block w-full text-left px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-20 relative z-10">
+        <section class="py-20 min-h-screen">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <span class="text-primary font-medium tracking-wide text-sm uppercase">Biography</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mt-2 mb-6">Behind the Code</h2>
+                    <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+                </div>
+
+                <div class="bg-card rounded-2xl p-8 border border-slate-700/50 mb-12 shadow-xl">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="w-32 h-32 md:w-48 md:h-48 flex-shrink-0 rounded-full overflow-hidden border-4 border-slate-700">
+                            <img src="assets/images/about/me.jpg" alt="Paul Kocian" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-white mb-2">Hello, I'm Paul Kocian</h3>
+                            <p class="text-primary font-medium mb-4">aka OrangoMango</p>
+                            <p class="text-slate-400 leading-relaxed mb-4">
+                                I am currently a first-year student at the <span class="text-white font-semibold">University of Pisa</span>, and a graduate of <span class="text-white">Liceo Filippo Buonarroti</span>.
+                            </p>
+                            <p class="text-slate-400 leading-relaxed mb-4">
+                                My coding journey started around the age of 13 with Python, building a simple calculator and GUI apps. By 14, I discovered Java, and I started making new games, tools and applications.
+                            </p>
+                            
+                            <div class="mt-6">
+                                <a href="https://foojay.io/today/interview-with-paul-kocian-aka-orango_mango/" target="_blank" class="inline-flex items-center text-primary hover:text-white transition-colors font-medium border-b border-primary/30 hover:border-white pb-1">
+                                    Read my Interview on Foojay.io <i class="fas fa-external-link-alt ml-2 text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    <div class="w-full h-64 rounded-xl overflow-hidden border border-slate-700 relative shadow-2xl group">
+                        <img src="assets/images/about/verruca.jpg" alt="Verruca" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4">
+                            <p class="text-white text-sm font-medium italic"><i class="fas fa-camera mr-2"></i> Rocca della Verruca, 19 Apr 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full h-64 rounded-xl overflow-hidden border border-slate-700 relative shadow-2xl group">
+                        <img src="assets/images/about/malbacco.jpg" alt="Malbacco" class="w-full h-full object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/90 to-transparent p-4">
+                            <p class="text-white text-sm font-medium italic"><i class="fas fa-camera mr-2"></i> Malbacco, 26 Oct 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-12">
+                    <div class="border-l-2 border-slate-700 pl-8 ml-4 relative">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blue-500 ring-4 ring-dark"></div>
+                        <h3 class="text-xl font-bold text-white mb-3">Academic Journey</h3>
+                        <div class="space-y-4">
+                            <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800">
+                                <h4 class="text-white font-medium">University of Pisa</h4>
+                                <p class="text-primary text-sm mb-1">First Year Student</p>
+                                <p class="text-slate-400 text-sm">On my way trying to understand computer science fundamentals, algorithms, and mathematics.</p>
+                            </div>
+                            <div class="bg-slate-900/50 p-4 rounded-lg border border-slate-800 opacity-75">
+                                <h4 class="text-white font-medium">Liceo Filippo Buonarroti</h4>
+                                <p class="text-slate-500 text-sm mb-1">Graduated with 97/100</p>
+                                <p class="text-slate-400 text-sm">Where I started coding my 3D engine and most of my stuff on weekends and in the free time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-l-2 border-slate-700 pl-8 ml-4 relative">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-dark"></div>
+                        <h3 class="text-xl font-bold text-white mb-3">Why "From Scratch"?</h3>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            I avoid pre-made game engines like Unity because I love understanding how things work on a low level. My inspiration was Minecraft (built in Java), which led me to create my own 3D engine using JavaFX and to implement all the maths that I learned through the time.
+                        </p>
+                        <blockquote class="bg-slate-900/50 p-4 rounded-lg border-l-4 border-primary italic text-slate-400">
+                            "If something looks easy, then you are doing it wrong."
+                        </blockquote>
+                    </div>
+
+                    <div class="border-l-2 border-slate-700 pl-8 ml-4 relative">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-green-500 ring-4 ring-dark"></div>
+                        <h3 class="text-xl font-bold text-white mb-3">The Raspberry Pi Challenge</h3>
+                        <div class="bg-slate-900 rounded-xl p-6 border border-slate-800">
+                            <div class="flex flex-col md:flex-row gap-6 items-center">
+                                <div class="flex-grow">
+                                    <p class="text-slate-400 mb-4">
+                                        Unlike developers with NASA computers, I build my 3D engine on a <strong>Raspberry Pi 4B with only 2GB of RAM</strong>. This constraint forces me to write incredibly efficient code.
+                                    </p>
+                                    <ul class="text-sm text-slate-500 space-y-2">
+                                        <li><i class="fas fa-microchip w-6 text-center"></i> Hardware: Raspberry Pi 4B (2GB)</li>
+                                        <li><i class="fas fa-terminal w-6 text-center"></i> OS: Linux</li>
+                                        <li><i class="fas fa-code w-6 text-center"></i> IDE: Geany (Very lightweight)</li>
+                                    </ul>
+                                </div>
+                                <div class="w-full md:w-48 aspect-video bg-black rounded-lg flex items-center justify-center border border-slate-700">
+                                    <i class="fab fa-raspberry-pi text-4xl text-pink-600"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-l-2 border-slate-700 pl-8 ml-4 relative">
+                        <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-purple-500 ring-4 ring-dark"></div>
+                        <h3 class="text-xl font-bold text-white mb-3">The Mathematics of 3D</h3>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            Building a game engine from scratch is the next step in linear algebra and computer graphics. Without external libraries, I had to implement the core <strong>3D math</strong> manually:
+                        </p>
+                        <ul class="space-y-3 text-slate-400 text-sm">
+                            <li class="flex items-start"><i class="fas fa-calculator text-purple-500 mt-1 mr-3"></i> <span><strong>Matrices & Vectors:</strong> Handling translation, rotation, and projection matrices to convert 3D coordinates into 2D screen pixels.</span></li>
+                            <li class="flex items-start"><i class="fas fa-paint-brush text-purple-500 mt-1 mr-3"></i> <span><strong>Texture Rendering:</strong> Implementing UV mapping and affine texture mapping to apply images onto 3D surfaces correctly.</span></li>
+                            <li class="flex items-start"><i class="fas fa-tachometer-alt text-purple-500 mt-1 mr-3"></i> <span><strong>Efficiency:</strong> I'm still working on this, but the main goal here is writing highly optimized loops for rasterization to maintain playable framerates on low-end hardware like the Raspberry Pi.</span></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="mt-16 text-center">
+                    <a href="https://github.com/OrangoMango" target="_blank" class="text-primary hover:text-white transition-colors font-medium inline-flex items-center">
+                        Follow my journey on GitHub <i class="fas fa-arrow-right ml-2"></i>
+                   </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 border-t border-slate-800 mt-auto relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-slate-500 text-sm mb-4 md:mb-0">
+                © 2026 OrangoMango. All rights reserved.
+            </p>
+            <div class="flex space-x-6 text-sm text-slate-500">
+                <a href="https://github.com/OrangoMango" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                <a href="https://orangomango.itch.io/" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-itch-io text-xl text-red-400"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrangoMango - Adventure Detail</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                    },
+                    colors: {
+                        primary: '#f59e0b',
+                        secondary: '#3b82f6',
+                        dark: '#0f172a',
+                        darker: '#020617',
+                        card: '#1e293b',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="icon.png" type="icon/png" sizes="32x32">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZVPKFEV9XB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZVPKFEV9XB');
+    </script>
+</head>
+<body class="bg-darker text-slate-300 font-sans antialiased flex flex-col min-h-screen">
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex-shrink-0 flex items-center">
+                    <img src="icon.png" alt="Logo" class="h-8 w-8 rounded-full mr-3 border border-slate-600">
+                    <span class="text-2xl font-bold text-white tracking-tight">
+                        Orango<span class="text-primary">Mango</span>
+                    </span>
+                </a>
+                
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="about.html" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">About</a>
+                        <a href="index.html#projects" class="hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Projects</a>
+                        <a href="index.html#cycling" class="text-primary px-3 py-2 rounded-md text-sm font-medium transition-colors">Cycling</a>
+                    </div>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:hidden hidden bg-card border-t border-slate-700" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="text-gray-300 block w-full text-left px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 block w-full text-left px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="index.html#cycling" class="text-white block w-full text-left px-3 py-2 rounded-md text-base font-medium">Cycling</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-20">
+        <div class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-dark min-h-screen">
+            <div class="max-w-6xl mx-auto">
+                <a href="index.html#cycling" class="mb-8 flex items-center text-slate-400 hover:text-white transition-colors">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to Cycling
+                </a>
+
+                <h1 id="detail-title" class="text-4xl md:text-6xl font-bold text-white mb-6">Loading...</h1>
+                
+                <div class="flex flex-col lg:flex-row gap-8 mb-12">
+                    <div class="flex-1">
+                         <p id="detail-description" class="text-slate-400 text-lg leading-relaxed">
+                            </p>
+                    </div>
+                    <div class="w-full lg:w-1/3 h-64 bg-slate-800 rounded-xl overflow-hidden border-4 border-slate-600 shadow-2xl relative">
+                         <div id="detail-map" class="w-full h-full">
+                             </div>
+                    </div>
+                </div>
+
+                <div id="detail-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+                    </div>
+
+                <div id="detail-video-container" class="bg-black rounded-xl overflow-hidden border border-slate-700/50 shadow-2xl">
+                    </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-darker py-8 border-t border-slate-800 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <p class="text-slate-500 text-sm mb-4 md:mb-0">
+                © 2026 OrangoMango. All rights reserved.
+            </p>
+            <div class="flex space-x-6 text-sm text-slate-500">
+                <a href="https://github.com/OrangoMango" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-github text-xl"></i></a>
+                <a href="https://orangomango.itch.io/" target="_blank" class="hover:text-white transition-colors"><i class="fab fa-itch-io text-xl text-red-400"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-black/90 hidden flex items-center justify-center p-4 opacity-0 transition-opacity duration-300" onclick="closeLightbox()">
+        <button class="absolute top-4 right-4 text-white text-4xl hover:text-primary focus:outline-none" onclick="closeLightbox()">×</button>
+        <button class="absolute left-4 text-white text-4xl hover:text-primary focus:outline-none z-50" onclick="changeLightboxImage(-1)">❮</button>
+        <button class="absolute right-4 text-white text-4xl hover:text-primary focus:outline-none z-50" onclick="changeLightboxImage(1)">❯</button>
+        <img id="lightbox-img" src="" alt="Full Screen View" class="max-w-full max-h-[90vh] rounded-lg shadow-2xl transform scale-95 transition-transform duration-300" onclick="event.stopPropagation()">
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
