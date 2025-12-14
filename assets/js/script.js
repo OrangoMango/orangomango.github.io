@@ -102,6 +102,7 @@ const adventureData = {
         video: "_ibi8D1tscw",
         desc: "A small town near Pisa, situated next to the mountains.",
         imageCount: 5,
+        komootId: "1578833923",
         coords: "43.23397,11.56063"
     },
     'campo': {
@@ -109,6 +110,7 @@ const adventureData = {
         video: "hYp1R6S4gRM",
         desc: "Two beautiful artificial lakes, not too far from the center of Pisa.",
         imageCount: 8,
+        komootId: "1690779455",
         coords: "43.7067,10.4758"
     },
     'firenze': {
@@ -123,6 +125,7 @@ const adventureData = {
         video: "8BlxYzyH52Y",
         desc: "A ride along this vast lake, located near Viareggio (LU).",
         imageCount: 4,
+        komootId: "2153793642",
         coords: "43.8243,10.3459"
     },
     'wien': {
