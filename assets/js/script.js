@@ -103,7 +103,7 @@ const adventureData = {
         desc: "A small town near Pisa, situated next to the mountains.",
         imageCount: 5,
         komootId: "1578833923",
-        coords: "43.23397,11.56063"
+        coords: "43.7499,10.4681"
     },
     'campo': {
         title: "Laghetti di Campo",
