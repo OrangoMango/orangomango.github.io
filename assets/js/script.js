@@ -25,14 +25,14 @@ const adventureData = {
         title: "Cesenatico",
         video: "g369ApLdvbA",
         desc: "A coastal town located on the Adriatic Sea, on the eastern side of Italy.",
-        imageCount: 6,
+        imageCount: 7,
         coords: "44.2007,12.3934"
     },
     'quercianella': {
         title: "Quercianella",
         video: "VjxLfYZw9Ak",
         desc: "The destination of my first 100km bike ride. Quercianella (LI) is a beautiful seaside village just south of Livorno.",
-        imageCount: 4,
+        imageCount: 5,
         komootId: "2189329940",
         coords: "43.4697,10.3743"
     },
@@ -40,7 +40,7 @@ const adventureData = {
         title: "Rocca della Verruca",
         video: "EyK2YEURmTs",
         desc: "A historic fortress located on the top of a mountain overlooking Calci (PI).",
-        imageCount: 2,
+        imageCount: 5,
         komootId: "1662620187",
         coords: "43.7126,10.5363"
     },
@@ -51,18 +51,18 @@ const adventureData = {
         imageCount: 3,
         coords: "47.8596,16.8361"
     },
-    'barcellona': {
+    'barcelona': {
         title: "Barcelona",
         video: "jhimTUTofag",
         desc: "A major Spanish city showcasing iconic landmarks like the Sagrada Família, Park Güell, and the famous La Rambla boulevard.",
-        imageCount: 6,
+        imageCount: 7,
         coords: "41.3851,2.1734"
     },
     'caprona': {
         title: "Torretta di Caprona",
         video: "Ps1jJUxsJXI",
         desc: "A distinctive tower standing on top of a hill in Caprona, near Calci (PI).",
-        imageCount: 2,
+        imageCount: 3,
         komootId: "1990644161",
         coords: "43.7061,10.5614"
     },
@@ -70,7 +70,7 @@ const adventureData = {
         title: "Marina di Pisa",
         video: "14ej2F2GmDs",
         desc: "The beautiful seaside area of Pisa, accessible via a 15km bike path from the city center.",
-        imageCount: 6,
+        imageCount: 9,
         komootId: "2137786473",
         coords: "43.6702,10.2764"
     },
@@ -85,8 +85,8 @@ const adventureData = {
     'pisa': {
         title: "Pisa",
         video: "RurEFHm84rQ",
-        desc: "A collection of highlights from around Pisa's historic city center.",
-        imageCount: 6,
+        desc: "A collection of highlights from Pisa (PI).",
+        imageCount: 12,
         coords: "43.7228,10.4017"
     },
     'lucca': {
@@ -96,6 +96,48 @@ const adventureData = {
         imageCount: 3,
         komootId: "1839401017",
         coords: "43.8429,10.5027"
+    },
+    'asciano': {
+        title: "Asciano",
+        video: "_ibi8D1tscw",
+        desc: "A small town near Pisa, situated next to the mountains.",
+        imageCount: 5,
+        coords: "43.23397,11.56063"
+    },
+    'campo': {
+        title: "Laghetti di Campo",
+        video: "hYp1R6S4gRM",
+        desc: "Two beautiful artificial lakes, not too far from the center of Pisa.",
+        imageCount: 8,
+        coords: "43.7067,10.4758"
+    },
+    'firenze': {
+        title: "Firenze",
+        video: "XCHxWwUT6PU",
+        desc: "One of the largest cities in Tuscany.",
+        imageCount: 6,
+        coords: "43.7767,11.2573"
+    },
+    'massaciuccoli': {
+        title: "Lago di Massaciuccoli",
+        video: "8BlxYzyH52Y",
+        desc: "A ride along this vast lake, located near Viareggio (LU).",
+        imageCount: 4,
+        coords: "43.8243,10.3459"
+    },
+    'wien': {
+        title: "Wien",
+        video: undefined,
+        desc: "Vienna, the capital of Austria. Located just along the Danube river.",
+        imageCount: 14,
+        coords: "48.2195,16.3785"
+    },
+    'bratislava': {
+        title: "Bratislava",
+        video: undefined,
+        desc: "Bratislava, the capital of Slovakia.",
+        imageCount: 9,
+        coords: "48.1486,17.1077"
     }
 };
 
@@ -182,7 +224,7 @@ function loadAdventureDetail() {
     }
 
     // Update Video
-    document.getElementById('detail-video-container').innerHTML = 
+    document.getElementById('detail-video-container').innerHTML = data.video == undefined ? "" : 
         `<div class="video-container"><iframe src="https://www.youtube.com/embed/${data.video}" title="${data.title}" frameborder="0" allowfullscreen></iframe></div>`;
 
     // Update Map
