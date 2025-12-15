@@ -86,7 +86,7 @@ const adventureData = {
         title: "Pisa",
         video: "RurEFHm84rQ",
         desc: "A collection of highlights from Pisa (PI).",
-        imageCount: 12,
+        imageCount: 11,
         coords: "43.7228,10.4017"
     },
     'lucca': {
