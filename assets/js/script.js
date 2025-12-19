@@ -313,34 +313,36 @@ function closeLightbox() {
 function updateHero() {
     const section = document.getElementById('hero-section');
     const title = document.getElementById('hero-title');
+    const link = document.getElementById('hero-link');
     
-    if (!section || !title) return;
+    if (!section || !title || !link || typeof adventureData === 'undefined') return;
 
     const adventureKeys = Object.keys(adventureData);
-    
     const randomKey = adventureKeys[Math.floor(Math.random() * adventureKeys.length)];
     const data = adventureData[randomKey];
 
     const randomImgIndex = Math.floor(Math.random() * data.imageCount);
     const imagePath = `assets/images/drone/${randomKey}/${randomImgIndex}.JPG`;
 
-    section.style.opacity = "0.7";
-    section.style.filter = "blur(8px)";
+    section.style.opacity = "0.8";
+    section.style.filter = "blur(4px)";
 
     setTimeout(() => {
-        // Update Content
         section.style.backgroundImage = `url('${imagePath}')`;
         title.textContent = data.title;
+        
+        link.href = `adventure.html?id=${randomKey}`;
 
-        // Visual Transition: Fade/Blur In
         section.style.opacity = "1";
         section.style.filter = "blur(0px)";
     }, 600);
 }
 
+// Start cycle on load
 document.addEventListener('DOMContentLoaded', () => {
     updateHero();
-    setInterval(updateHero, 5000);
+    // 8-second interval for a smooth, non-distracting cycle
+    setInterval(updateHero, 8000);
 });
 
 // Keyboard Listeners

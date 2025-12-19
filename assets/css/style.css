@@ -78,11 +78,18 @@
 #hero-section {
     background-size: cover;
     background-position: center;
-    /* transition-duration should be slightly longer than the JS timeout for smoothness */
     transition: background-image 1.5s ease-in-out, 
                 opacity 1s ease-in-out, 
                 filter 1s ease-in-out;
     will-change: background-image, opacity, filter;
+}
+
+#hero-link i {
+    transition: transform 0.3s ease;
+}
+
+#hero-link:hover i {
+    transform: translateX(4px);
 }
 
 #hero-title {
