@@ -75,6 +75,26 @@
     background-size: cover;
 }
 
+#hero-section {
+    background-size: cover;
+    background-position: center;
+    /* transition-duration should be slightly longer than the JS timeout for smoothness */
+    transition: background-image 1.5s ease-in-out, 
+                opacity 1s ease-in-out, 
+                filter 1s ease-in-out;
+    will-change: background-image, opacity, filter;
+}
+
+#hero-title {
+    /* Subtle text entrance animation */
+    animation: fadeUp 1.2s ease-out;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 .about-bg {
     background-image: url('../images/about/cese.jpg');
     background-size: cover;

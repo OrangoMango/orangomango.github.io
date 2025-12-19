@@ -310,6 +310,39 @@ function closeLightbox() {
     document.body.style.overflow = 'auto'; 
 }
 
+function updateHero() {
+    const section = document.getElementById('hero-section');
+    const title = document.getElementById('hero-title');
+    
+    if (!section || !title) return;
+
+    const adventureKeys = Object.keys(adventureData);
+    
+    const randomKey = adventureKeys[Math.floor(Math.random() * adventureKeys.length)];
+    const data = adventureData[randomKey];
+
+    const randomImgIndex = Math.floor(Math.random() * data.imageCount);
+    const imagePath = `assets/images/drone/${randomKey}/${randomImgIndex}.JPG`;
+
+    section.style.opacity = "0.7";
+    section.style.filter = "blur(8px)";
+
+    setTimeout(() => {
+        // Update Content
+        section.style.backgroundImage = `url('${imagePath}')`;
+        title.textContent = data.title;
+
+        // Visual Transition: Fade/Blur In
+        section.style.opacity = "1";
+        section.style.filter = "blur(0px)";
+    }, 600);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    updateHero();
+    setInterval(updateHero, 5000);
+});
+
 // Keyboard Listeners
 document.addEventListener('keydown', function(event) {
     const lightbox = document.getElementById('lightbox');
