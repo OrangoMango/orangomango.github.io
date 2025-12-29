@@ -144,7 +144,7 @@ const adventureData = {
     },
     'montefocoraccia': {
         title: "Monte Focoraccia",
-        video: undefined,
+        video: "qzipSAUjOak",
         desc: "A 1200m high mountain near Seravezza (LU).",
         imageCount: 7,
         komootId: "2729550351",
