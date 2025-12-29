@@ -141,6 +141,14 @@ const adventureData = {
         desc: "Bratislava, the capital of Slovakia.",
         imageCount: 9,
         coords: "48.1486,17.1077"
+    },
+    'montefocoraccia': {
+        title: "Monte Focoraccia",
+        video: undefined,
+        desc: "A 1200m high mountain near Seravezza (LU).",
+        imageCount: 7,
+        komootId: "2729550351",
+        coords: "44.0440,10.2150"
     }
 };
 
