@@ -149,6 +149,14 @@ const adventureData = {
         imageCount: 7,
         komootId: "2729550351",
         coords: "44.0440,10.2150"
+    },
+    'bosniaski': {
+        title: "Villa Bosniaski",
+        video: undefined,
+        desc: "A nice looking structure near Asciano (PI).",
+        imageCount: 5,
+        komootId: "2738728501",
+        coords: "43.7560,10.4477"
     }
 };
 
@@ -349,7 +357,6 @@ function updateHero() {
 // Start cycle on load
 document.addEventListener('DOMContentLoaded', () => {
     updateHero();
-    // 8-second interval for a smooth, non-distracting cycle
     setInterval(updateHero, 8000);
 });
 
