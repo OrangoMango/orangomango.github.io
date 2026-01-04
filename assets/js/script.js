@@ -152,7 +152,7 @@ const adventureData = {
     },
     'bosniaski': {
         title: "Villa Bosniaski",
-        video: undefined,
+        video: "HOXPb1QM80s",
         desc: "A nice looking structure near Asciano (PI).",
         imageCount: 5,
         komootId: "2738728501",
