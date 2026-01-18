@@ -68,7 +68,7 @@ const adventureData = {
     },
     'marina': {
         title: "Marina di Pisa",
-        video: "14ej2F2GmDs",
+        video: "xaMufj6KmUo",
         desc: "The beautiful seaside area of Pisa, accessible via a 15km bike path from the city center.",
         imageCount: 9,
         komootId: "2137786473",
